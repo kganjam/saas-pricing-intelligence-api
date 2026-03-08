@@ -1,0 +1,52 @@
+[
+  {
+    "id": "req_001",
+    "product_name": "Team Collaboration Tool",
+    "current_price": 149,
+    "competitors": ["Slack", "Microsoft Teams", "Notion"],
+    "customer_segment": "smb",
+    "features": ["api_access", "analytics", "integrations", "support"],
+    "feature_count": 4,
+    "tier": "growth"
+  },
+  {
+    "id": "req_002",
+    "product_name": "Enterprise CRM",
+    "current_price": 299,
+    "competitors": ["Salesforce", "HubSpot", "Pipedrive"],
+    "customer_segment": "enterprise",
+    "features": ["api_access", "analytics", "integrations", "support", "white_label", "sso", "audit_logs"],
+    "feature_count": 7,
+    "tier": "enterprise"
+  },
+  {
+    "id": "req_003",
+    "product_name": "Startup Analytics",
+    "current_price": 49,
+    "competitors": ["Mixpanel", "Amplitude", "Pendo"],
+    "customer_segment": "startup",
+    "features": ["api_access", "analytics"],
+    "feature_count": 2,
+    "tier": "starter"
+  },
+  {
+    "id": "req_004",
+    "product_name": "Marketing Platform",
+    "current_price": 199,
+    "competitors": ["Mailchimp", "HubSpot", "ActiveCampaign"],
+    "customer_segment": "mid-market",
+    "features": ["api_access", "analytics", "integrations", "support", "custom_domain"],
+    "feature_count": 5,
+    "tier": "growth"
+  },
+  {
+    "id": "req_005",
+    "product_name": "Help Desk Software",
+    "current_price": 79,
+    "competitors": ["Zendesk", "Freshdesk", "Intercom"],
+    "customer_segment": "smb",
+    "features": ["api_access", "analytics", "support"],
+    "feature_count": 3,
+    "tier": "starter"
+  }
+]

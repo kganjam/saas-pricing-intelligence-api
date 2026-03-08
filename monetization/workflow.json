@@ -1,0 +1,43 @@
+{
+  "revenue_model": "subscription",
+  "pricing_tiers": [
+    {
+      "name": "starter",
+      "monthly_price": 49,
+      "api_calls_per_month": 100,
+      "features": ["basic_analytics", "email_support"]
+    },
+    {
+      "name": "growth",
+      "monthly_price": 199,
+      "api_calls_per_month": 1000,
+      "features": ["advanced_analytics", "competitor_tracking", "priority_support"]
+    },
+    {
+      "name": "enterprise",
+      "monthly_price": 999,
+      "api_calls_per_month": -1,
+      "features": ["custom_models", "dedicated_support", "sla"]
+    }
+  ],
+  "projections": {
+    "month_1": {
+      "starter_subscribers": 10,
+      "growth_subscribers": 2,
+      "enterprise_subscribers": 0,
+      "mrr": 890
+    },
+    "month_3": {
+      "starter_subscribers": 25,
+      "growth_subscribers": 8,
+      "enterprise_subscribers": 1,
+      "mrr": 3536
+    },
+    "month_6": {
+      "starter_subscribers": 50,
+      "growth_subscribers": 20,
+      "enterprise_subscribers": 3,
+      "mrr": 8835
+    }
+  }
+}

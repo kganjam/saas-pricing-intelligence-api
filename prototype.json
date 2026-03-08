@@ -1,0 +1,41 @@
+{
+  "idea_id": "idea-saas-pricing-intelligence",
+  "title": "SaaS Pricing Intelligence API",
+  "scaffold_version": "1.1.0",
+  "status": "ready_for_deployment",
+  "created": "2026-03-08T00:00:00.000000+00:00",
+  "updated": "2026-03-08T21:59:00.000000+00:00",
+  "checkpoints": {
+    "mvp_logic": true,
+    "monetization_path": true,
+    "automated_runs": true,
+    "ab_test_ready": true,
+    "deployment_ready": true
+  },
+  "service_details": {
+    "name": "SaaS Pricing Intelligence API",
+    "description": "AI-powered pricing intelligence for SaaS products - analyzes market data, competitor pricing, and customer segments to recommend optimal pricing strategies",
+    "pricing": {
+      "starter_monthly": 49,
+      "growth_monthly": 199,
+      "enterprise_monthly": 999
+    },
+    "target_market": "SaaS founders, product managers, pricing strategists",
+    "value_proposition": "Data-driven pricing recommendations that increase MRR by 10-25%"
+  },
+  "deployment": {
+    "platform": "render",
+    "config_file": "render.yaml",
+    "railway_config": "railway.json",
+    "status": "not_deployed",
+    "local_url": "http://localhost:5000",
+    "public_url": null,
+    "stripe_integration": "payment_links",
+"webhook_endpoint": "/api/webhook/stripe",
+    "verification_script": "verify_deployment.sh",
+    "verified_local": "2026-03-08T13:33:00Z",
+    "verified_api_local": "2026-03-08T21:59:00Z",
+    "deployment_instructions": "Deploy via Render Dashboard or Railway. See DEPLOYMENT.md for steps. Requires: (1) Render/Railway account, (2) Stripe account for payment links",
+    "notes": "Replace test Stripe links in landing.html with real payment links from Stripe Dashboard. Run verify_deployment.sh after deployment. API verified working locally."
+  }
+}

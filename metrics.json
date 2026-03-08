@@ -1,0 +1,20 @@
+{
+  "idea_id": "idea-7af2126f",
+  "prototype_path": "data/prototypes/idea-saas-pricing-intelligence",
+  "created": "2026-03-08",
+  "stage": "prototyping",
+  "endpoints": [
+    "/api/products",
+    "/api/pricing/<id>",
+    "/api/compare",
+    "/api/trends",
+    "/api/search"
+  ],
+  "sample_products": 10,
+  "tests": {
+    "smoke": "passing",
+    "integration": "not run"
+  },
+  "dockerfile": "exists",
+  "landing_page": "exists"
+}

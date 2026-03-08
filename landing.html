@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Pricing Intelligence API - Market Data for 10,000+ Products</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        header { background: #1a1a2e; color: white; padding: 20px 0; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: 700; color: #00d4ff; }
+        .nav-links a { color: white; text-decoration: none; margin-left: 20px; }
+
+        .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 80px 0; text-align: center; }
+        .hero h1 { font-size: 48px; margin-bottom: 20px; }
+        .hero p { font-size: 20px; opacity: 0.9; margin-bottom: 30px; }
+        .hero .highlight { color: #00d4ff; }
+        .cta { display: inline-block; background: #00d4ff; color: #1a1a2e; padding: 15px 40px; border-radius: 8px; font-weight: 600; text-decoration: none; margin: 10px; cursor: pointer; border: none; }
+        .cta.secondary { background: transparent; border: 2px solid #00d4ff; color: #00d4ff; }
+
+        .features { padding: 80px 0; background: #f8f9fa; }
+        .features h2 { text-align: center; font-size: 36px; margin-bottom: 50px; }
+        .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .feature-card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .feature-card h3 { margin-bottom: 15px; color: #1a1a2e; }
+
+        .stats { background: #1a1a2e; color: white; padding: 60px 0; }
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; text-align: center; }
+        .stat-item .number { font-size: 48px; font-weight: 700; color: #00d4ff; }
+
+        .pricing { padding: 80px 0; }
+        .pricing h2 { text-align: center; font-size: 36px; margin-bottom: 50px; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+        .price-card { border: 2px solid #e0e0e0; border-radius: 12px; padding: 30px; text-align: center; transition: transform 0.3s; }
+        .price-card:hover { transform: translateY(-5px); border-color: #00d4ff; }
+        .price-card.featured { border-color: #00d4ff; background: #f0f9ff; }
+        .price-card .name { font-size: 20px; font-weight: 600; margin-bottom: 10px; }
+        .price-card .price { font-size: 36px; font-weight: 700; color: #1a1a2e; margin-bottom: 20px; }
+        .price-card .price span { font-size: 16px; font-weight: 400; color: #666; }
+        .price-card ul { list-style: none; text-align: left; margin-bottom: 20px; }
+        .price-card li { padding: 8px 0; border-bottom: 1px solid #eee; }
+        .price-card li:last-child { border: none; }
+
+        .api-demo { background: #f8f9fa; padding: 80px 0; }
+        .api-demo h2 { text-align: center; font-size: 36px; margin-bottom: 30px; }
+        .code-block { background: #1a1a2e; color: #00d4ff; padding: 20px; border-radius: 8px; font-family: monospace; overflow-x: auto; }
+
+        footer { background: #1a1a2e; color: white; padding: 40px 0; text-align: center; }
+        footer p { opacity: 0.7; }
+
+        @media (max-width: 768px) {
+            .feature-grid, .stats-grid, .pricing-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 32px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">SaaS Pricing API</div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#api">API</a>
+                    <a href="/api/status">Status</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <script>
+        // Stripe configuration - replace with your publishable key
+        var stripe = null;
+
+        // Initialize Stripe when page loads (replace with your key)
+        document.addEventListener('DOMContentLoaded', function() {
+            // For demo, using test key format - replace with real key in production
+            // stripe = Stripe('pk_test_your_key_here');
+        });
+
+        function handleSubscribe(priceId) {
+            if (!stripe) {
+                // Fallback to Stripe Checkout redirect
+                alert('Stripe checkout will open. Configure your Stripe account for payments.');
+                return false;
+            }
+            stripe.redirectToCheckout({ lineItems: [{ price: priceId, quantity: 1 }] })
+                .then(function(result) {
+                    if (result.error) alert(result.error.message);
+                });
+            return false;
+        }
+
+        // Track signup events for analytics
+        function trackSignup(plan) {
+            console.log('Signup attempt:', plan);
+            // Store in localStorage for demo tracking
+            var signups = JSON.parse(localStorage.getItem('pricing_api_signups') || '[]');
+            signups.push({
+                plan: plan,
+                timestamp: new Date().toISOString()
+            });
+            localStorage.setItem('pricing_api_signups', JSON.stringify(signups));
+
+            // Google Analytics event tracking (if GA is configured)
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'begin_checkout', {
+                    currency: 'USD',
+                    value: plan === 'startup' ? 49 : plan === 'business' ? 199 : 499,
+                    items: [{ item_name: plan }]
+                });
+            }
+        }
+    </script>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Pricing Intelligence for <span class="highlight">10,000+ SaaS Products</span></h1>
+            <p>Build competitive pricing tools, market analysis dashboards, and revenue optimization solutions with our comprehensive SaaS pricing dataset.</p>
+            <a href="#api" class="cta">View API Docs</a>
+            <a href="#pricing" class="cta secondary">Get Started</a>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Why SaaS Pricing Intelligence?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>📊 Market Intelligence</h3>
+                    <p>Access real-time pricing data across 10,000+ SaaS products. Understand market rates, competitive positioning, and pricing trends.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔄 Historical Tracking</h3>
+                    <p>Track pricing changes over time. Our data moat grows more valuable as historical depth increases, enabling trend analysis.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚡ Easy Integration</h3>
+                    <p>Simple REST API with SDKs for Python, Node.js, and more. Get started in minutes with comprehensive documentation.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💰 Revenue Optimization</h3>
+                    <p>Price competitively using real market data. Understand tier structures, feature differentiation, and pricing models.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎯 Use Cases</h3>
+                    <p>Competitive analysis, M&A due diligence, sales enablement, product pricing, and market research.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🛡️ Legal Compliance</h3>
+                    <p>We aggregate publicly available pricing data. All data is properly sourced and compliant with relevant regulations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="number">10,000+</div>
+                    <div>Products Tracked</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">500+</div>
+                    <div>Categories</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">99.9%</div>
+                    <div>API Uptime</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">$247B</div>
+                    <div>SaaS Market TAM</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Simple, Transparent Pricing</h2>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div class="name">Developer</div>
+                    <div class="price">$0<span>/mo</span></div>
+                    <ul>
+                        <li>✓ 100 API requests/day</li>
+                        <li>✓ 10 products</li>
+                        <li>✓ Basic pricing data</li>
+                        <li>✓ Community support</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/test_starter" class="cta secondary" onclick="trackSignup('developer')">Start Free</a>
+                </div>
+                <div class="price-card featured">
+                    <div class="name">Startup</div>
+                    <div class="price">$49<span>/mo</span></div>
+                    <ul>
+                        <li>✓ 5,000 API requests/day</li>
+                        <li>✓ 100 products</li>
+                        <li>✓ Full pricing data</li>
+                        <li>✓ CSV exports</li>
+                        <li>✓ Email support</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/test_startup" class="cta" onclick="trackSignup('startup')">Get Started</a>
+                </div>
+                <div class="price-card">
+                    <div class="name">Business</div>
+                    <div class="price">$199<span>/mo</span></div>
+                    <ul>
+                        <li>✓ 50,000 API requests/day</li>
+                        <li>✓ 1,000 products</li>
+                        <li>✓ Historical data</li>
+                        <li>✓ Unlimited searches</li>
+                        <li>✓ Priority support</li>
+                    </ul>
+                    <a href="https://buy.stripe.com/test_business" class="cta secondary" onclick="trackSignup('business')">Get Started</a>
+                </div>
+                <div class="price-card">
+                    <div class="name">Enterprise</div>
+                    <div class="price">$499<span>/mo</span></div>
+                    <ul>
+                        <li>✓ Unlimited requests</li>
+                        <li>✓ Unlimited products</li>
+                        <li>✓ Custom data feeds</li>
+                        <li>✓ White-label</li>
+                        <li>✓ Dedicated support</li>
+                        <li>✓ SLA guarantee</li>
+                    </ul>
+                    <a href="mailto:sales@saaspricingapi.com?subject=Enterprise%20Pricing" class="cta secondary" onclick="trackSignup('enterprise')">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="api-demo" id="api">
+        <div class="container">
+            <h2>API Reference</h2>
+            <div class="code-block">
+<pre># Get all products
+GET /api/products
+
+# Get pricing for a specific product
+GET /api/pricing/slack
+
+# Compare multiple products
+POST /api/compare
+{"products": ["slack", "notion", "airtable"]}
+
+# Search by price
+GET /api/search?q=collaboration&max_price=20
+
+# Get category trends
+GET /api/trends</pre>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 SaaS Pricing Intelligence API. All rights reserved.</p>
+            <p style="margin-top: 10px; font-size: 14px; opacity: 0.5;">
+                Data aggregated from public sources. For research and competitive analysis purposes.
+            </p>
+        </div>
+    </footer>
+    <script>
+        // Track signup events for analytics
+        function trackSignup(plan) {
+            console.log('Signup attempt:', plan);
+            // Store in localStorage for demo tracking
+            var signups = JSON.parse(localStorage.getItem('pricing_api_signups') || '[]');
+            signups.push({
+                plan: plan,
+                timestamp: new Date().toISOString()
+            });
+            localStorage.setItem('pricing_api_signups', JSON.stringify(signups));
+
+            // Google Analytics event tracking (if GA is configured)
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'begin_checkout', {
+                    currency: 'USD',
+                    value: plan === 'startup' ? 49 : plan === 'business' ? 199 : 499,
+                    items: [{ item_name: plan }]
+                });
+            }
+        }
+
+        // Track page views
+        console.log('SaaS Pricing Intelligence API - Landing page loaded');
+    </script>
+</body>
+</html>

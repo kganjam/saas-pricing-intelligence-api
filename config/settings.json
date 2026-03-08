@@ -1,0 +1,39 @@
+{
+  "service_name": "SaaS Pricing Intelligence API",
+  "version": "1.0.0",
+  "max_requests_per_run": 20,
+  "cost_per_analysis": 0.005,
+  "base_conversion_rate_by_segment": {
+    "enterprise": 0.35,
+    "mid-market": 0.25,
+    "smb": 0.15,
+    "startup": 0.10
+  },
+  "tier_monthly_values": {
+    "starter": 49,
+    "growth": 199,
+    "enterprise": 999
+  },
+  "pricing_tiers": {
+    "starter": {
+      "monthly_price": 49,
+      "api_calls_per_month": 100
+    },
+    "growth": {
+      "monthly_price": 199,
+      "api_calls_per_month": 1000
+    },
+    "enterprise": {
+      "monthly_price": 999,
+      "api_calls_per_month": -1
+    }
+  },
+  "stripe": {
+    "publishable_key": "pk_test_your_key_here",
+    "price_ids": {
+      "starter": "price_starter_monthly",
+      "growth": "price_growth_monthly",
+      "enterprise": "price_enterprise_monthly"
+    }
+  }
+}
