@@ -1,0 +1,54 @@
+{
+  "idea_id": "idea-saas-pricing-intelligence",
+  "timestamp": "2026-03-10T16:47:00.993969+00:00",
+  "analyses_generated": 5,
+  "projected_monthly_revenue": 295.1205,
+  "results": [
+    {
+      "product_name": "Customer Support",
+      "recommended_price": 179.68,
+      "confidence": 0.6919,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 44.92
+    },
+    {
+      "product_name": "Marketing Platform",
+      "recommended_price": 114.59,
+      "confidence": 0.7196,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 28.6475
+    },
+    {
+      "product_name": "Team Collaboration Tool",
+      "recommended_price": 116.34,
+      "confidence": 0.7827,
+      "tier": "starter",
+      "segment": "smb",
+      "conversion_probability": 0.15,
+      "expected_revenue": 17.451
+    },
+    {
+      "product_name": "Startup Analytics",
+      "recommended_price": 367.73,
+      "confidence": 0.7724,
+      "tier": "starter",
+      "segment": "smb",
+      "conversion_probability": 0.15,
+      "expected_revenue": 55.1595
+    },
+    {
+      "product_name": "HR Software",
+      "recommended_price": 425.55,
+      "confidence": 0.7831,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 148.9425
+    }
+  ],
+  "dry_run": false
+}

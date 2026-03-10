@@ -1,0 +1,54 @@
+{
+  "idea_id": "idea-saas-pricing-intelligence",
+  "timestamp": "2026-03-10T16:47:03.503318+00:00",
+  "analyses_generated": 5,
+  "projected_monthly_revenue": 373.7865,
+  "results": [
+    {
+      "product_name": "Startup Analytics",
+      "recommended_price": 279.21,
+      "confidence": 0.7383,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 69.8025
+    },
+    {
+      "product_name": "Accounting Tool",
+      "recommended_price": 303.87,
+      "confidence": 0.7015,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 106.3545
+    },
+    {
+      "product_name": "Enterprise CRM",
+      "recommended_price": 116.88,
+      "confidence": 0.7878,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 29.22
+    },
+    {
+      "product_name": "HR Software",
+      "recommended_price": 218.54,
+      "confidence": 0.7944,
+      "tier": "starter",
+      "segment": "startup",
+      "conversion_probability": 0.1,
+      "expected_revenue": 21.854
+    },
+    {
+      "product_name": "Accounting Tool",
+      "recommended_price": 418.73,
+      "confidence": 0.7925,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 146.5555
+    }
+  ],
+  "dry_run": false
+}

@@ -1,0 +1,54 @@
+{
+  "idea_id": "idea-saas-pricing-intelligence",
+  "timestamp": "2026-03-10T16:46:03.265409+00:00",
+  "analyses_generated": 5,
+  "projected_monthly_revenue": 257.7525,
+  "results": [
+    {
+      "product_name": "Project Management",
+      "recommended_price": 300.61,
+      "confidence": 0.7594,
+      "tier": "starter",
+      "segment": "smb",
+      "conversion_probability": 0.15,
+      "expected_revenue": 45.0915
+    },
+    {
+      "product_name": "Project Management",
+      "recommended_price": 141.77,
+      "confidence": 0.7077,
+      "tier": "starter",
+      "segment": "startup",
+      "conversion_probability": 0.1,
+      "expected_revenue": 14.177
+    },
+    {
+      "product_name": "Marketing Platform",
+      "recommended_price": 321.99,
+      "confidence": 0.7601,
+      "tier": "starter",
+      "segment": "startup",
+      "conversion_probability": 0.1,
+      "expected_revenue": 32.199
+    },
+    {
+      "product_name": "Sales Automation",
+      "recommended_price": 302.01,
+      "confidence": 0.6996,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 75.5025
+    },
+    {
+      "product_name": "E-commerce Platform",
+      "recommended_price": 363.13,
+      "confidence": 0.687,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 90.7825
+    }
+  ],
+  "dry_run": false
+}

@@ -1,0 +1,54 @@
+{
+  "idea_id": "idea-saas-pricing-intelligence",
+  "timestamp": "2026-03-10T16:46:00.754693+00:00",
+  "analyses_generated": 5,
+  "projected_monthly_revenue": 293.947,
+  "results": [
+    {
+      "product_name": "Data Analytics",
+      "recommended_price": 273.85,
+      "confidence": 0.7485,
+      "tier": "starter",
+      "segment": "startup",
+      "conversion_probability": 0.1,
+      "expected_revenue": 27.385
+    },
+    {
+      "product_name": "Accounting Tool",
+      "recommended_price": 180.08,
+      "confidence": 0.6963,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 63.028
+    },
+    {
+      "product_name": "Data Analytics",
+      "recommended_price": 211.16,
+      "confidence": 0.7591,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 73.906
+    },
+    {
+      "product_name": "Accounting Tool",
+      "recommended_price": 278.2,
+      "confidence": 0.7216,
+      "tier": "starter",
+      "segment": "startup",
+      "conversion_probability": 0.1,
+      "expected_revenue": 27.82
+    },
+    {
+      "product_name": "Sales Automation",
+      "recommended_price": 290.88,
+      "confidence": 0.7662,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 101.808
+    }
+  ],
+  "dry_run": false
+}

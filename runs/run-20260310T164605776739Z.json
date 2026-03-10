@@ -1,0 +1,54 @@
+{
+  "idea_id": "idea-saas-pricing-intelligence",
+  "timestamp": "2026-03-10T16:46:05.776725+00:00",
+  "analyses_generated": 5,
+  "projected_monthly_revenue": 189.407,
+  "results": [
+    {
+      "product_name": "HR Software",
+      "recommended_price": 190.77,
+      "confidence": 0.7936,
+      "tier": "starter",
+      "segment": "smb",
+      "conversion_probability": 0.15,
+      "expected_revenue": 28.6155
+    },
+    {
+      "product_name": "Security Software",
+      "recommended_price": 243.37,
+      "confidence": 0.73,
+      "tier": "starter",
+      "segment": "startup",
+      "conversion_probability": 0.1,
+      "expected_revenue": 24.337
+    },
+    {
+      "product_name": "Data Analytics",
+      "recommended_price": 371.01,
+      "confidence": 0.7868,
+      "tier": "starter",
+      "segment": "smb",
+      "conversion_probability": 0.15,
+      "expected_revenue": 55.6515
+    },
+    {
+      "product_name": "Business Intelligence",
+      "recommended_price": 252.97,
+      "confidence": 0.7656,
+      "tier": "starter",
+      "segment": "startup",
+      "conversion_probability": 0.1,
+      "expected_revenue": 25.297
+    },
+    {
+      "product_name": "Customer Support",
+      "recommended_price": 370.04,
+      "confidence": 0.7259,
+      "tier": "starter",
+      "segment": "smb",
+      "conversion_probability": 0.15,
+      "expected_revenue": 55.506
+    }
+  ],
+  "dry_run": false
+}

@@ -1,0 +1,54 @@
+{
+  "idea_id": "idea-saas-pricing-intelligence",
+  "timestamp": "2026-03-10T16:45:58.244654+00:00",
+  "analyses_generated": 5,
+  "projected_monthly_revenue": 267.612,
+  "results": [
+    {
+      "product_name": "Startup Analytics",
+      "recommended_price": 81.83,
+      "confidence": 0.7016,
+      "tier": "starter",
+      "segment": "startup",
+      "conversion_probability": 0.1,
+      "expected_revenue": 8.183
+    },
+    {
+      "product_name": "Help Desk Software",
+      "recommended_price": 167.34,
+      "confidence": 0.795,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 41.835
+    },
+    {
+      "product_name": "Business Intelligence",
+      "recommended_price": 75.73,
+      "confidence": 0.7703,
+      "tier": "starter",
+      "segment": "startup",
+      "conversion_probability": 0.1,
+      "expected_revenue": 7.573
+    },
+    {
+      "product_name": "Startup Analytics",
+      "recommended_price": 233.93,
+      "confidence": 0.7448,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 81.8755
+    },
+    {
+      "product_name": "Team Collaboration Tool",
+      "recommended_price": 366.13,
+      "confidence": 0.7756,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 128.1455
+    }
+  ],
+  "dry_run": false
+}

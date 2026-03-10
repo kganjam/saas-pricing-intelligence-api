@@ -1,0 +1,54 @@
+{
+  "idea_id": "idea-saas-pricing-intelligence",
+  "timestamp": "2026-03-10T16:47:06.013535+00:00",
+  "analyses_generated": 5,
+  "projected_monthly_revenue": 424.757,
+  "results": [
+    {
+      "product_name": "Cloud Storage",
+      "recommended_price": 387.26,
+      "confidence": 0.7073,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 96.815
+    },
+    {
+      "product_name": "Project Management",
+      "recommended_price": 145.27,
+      "confidence": 0.7347,
+      "tier": "starter",
+      "segment": "startup",
+      "conversion_probability": 0.1,
+      "expected_revenue": 14.527
+    },
+    {
+      "product_name": "Customer Support",
+      "recommended_price": 303.76,
+      "confidence": 0.7378,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 75.94
+    },
+    {
+      "product_name": "HR Software",
+      "recommended_price": 394.36,
+      "confidence": 0.7399,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 138.026
+    },
+    {
+      "product_name": "Team Collaboration Tool",
+      "recommended_price": 284.14,
+      "confidence": 0.6919,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 99.449
+    }
+  ],
+  "dry_run": false
+}

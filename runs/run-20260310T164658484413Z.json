@@ -1,0 +1,54 @@
+{
+  "idea_id": "idea-saas-pricing-intelligence",
+  "timestamp": "2026-03-10T16:46:58.484400+00:00",
+  "analyses_generated": 5,
+  "projected_monthly_revenue": 262.4645,
+  "results": [
+    {
+      "product_name": "Marketing Platform",
+      "recommended_price": 337.54,
+      "confidence": 0.6902,
+      "tier": "starter",
+      "segment": "smb",
+      "conversion_probability": 0.15,
+      "expected_revenue": 50.631
+    },
+    {
+      "product_name": "Startup Analytics",
+      "recommended_price": 398.68,
+      "confidence": 0.7953,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 139.538
+    },
+    {
+      "product_name": "Data Analytics",
+      "recommended_price": 285.51,
+      "confidence": 0.7729,
+      "tier": "starter",
+      "segment": "startup",
+      "conversion_probability": 0.1,
+      "expected_revenue": 28.551
+    },
+    {
+      "product_name": "Data Analytics",
+      "recommended_price": 247.26,
+      "confidence": 0.7646,
+      "tier": "starter",
+      "segment": "startup",
+      "conversion_probability": 0.1,
+      "expected_revenue": 24.726
+    },
+    {
+      "product_name": "Business Intelligence",
+      "recommended_price": 126.79,
+      "confidence": 0.7891,
+      "tier": "starter",
+      "segment": "smb",
+      "conversion_probability": 0.15,
+      "expected_revenue": 19.0185
+    }
+  ],
+  "dry_run": false
+}

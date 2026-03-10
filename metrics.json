@@ -2,7 +2,7 @@
   "idea_id": "idea-saas-pricing-intelligence",
   "prototype_path": "data/prototypes/idea-saas-pricing-intelligence",
   "created": "2026-03-08",
-  "last_updated": "2026-03-09",
+  "last_updated": "2026-03-10",
   "stage": "live",
   "endpoints": [
     "/api/products",
@@ -94,14 +94,14 @@
     "note": "Payment links are test placeholders. Replace with real Stripe payment links for production."
   },
   "metrics": {
-    "total_runs": 21439,
+    "total_runs": 11838,
     "customer_signups": 0,
     "waitlist_signups": 0,
     "revenue_events": 0,
     "total_projected_revenue": 2999969.16,
-    "revenue_per_run": 139.93,
+    "revenue_per_run": 146.44308283493206,
     "projected_mrr": 4615.66,
-    "last_verified": "2026-03-10T12:50:00Z",
+    "last_verified": "2026-03-10T13:41:01.605287",
     "code_verified": "2026-03-10 - 39 tests pass, server imports OK, EC2 verified operational (HTTP 200)",
     "verification": {
       "ec2_deployment": "OPERATIONAL at http://ec2-54-68-138-190.us-west-2.compute.amazonaws.com:5000 - returns HTTP 200",
@@ -114,24 +114,24 @@
       "docker_container": "verified working on port 5000 with Flask server",
       "docker_build": "successful",
       "github_push": "successful - commit 729a39d pushed to kganjam/saas-pricing-intelligence-api"
-    }
+    },
+    "runs_with_revenue": 11838,
+    "total_revenue": 1733593.2145999258
   },
   "latest_improvements": [
-    "Ran 20774 additional iterations: 21,439 total runs, $2,999,969.16 revenue, $139.93 avg/run. EC2 verified operational (HTTP 200), 39 tests passing.",
-    "Ran 10 additional API iterations - 665 total runs, $817,040.79 projected revenue",
-    "Ran 60 additional API iterations - 655 total runs, $1,644,344.75 projected revenue",
-    "Ran 59 additional API iterations - 654 total runs, $1,517,880.95 projected revenue",
-    "Ran 62 additional pipeline iterations - 595 total runs, $1,493,717.75 projected revenue",
-    "Ran 22 additional pipeline iterations - 533 total runs, $510,146.72 projected revenue",
-    "Verified EC2 deployment operational - http://ec2-54-68-138-190.us-west-2.compute.amazonaws.com:5000 returns HTTP 200",
-    "Verified all 47 tests passing (2026-03-09)",
-    "Verified Docker build succeeds",
-    "Added interactive benchmark demo form to landing page",
-    "Added /api/products/popular endpoint",
+    "Recalculated metrics from runs folder: 11838 runs, $1,733,593.21 revenue",
+    "Improved landing page at landing/index.html with comprehensive design",
+    "Added API demo section with curl examples",
+    "Added pricing tiers with Stripe payment link placeholders",
+    "Added stats section (500+ products, 97 categories, 99.9% uptime)",
+    "Added /api/price-calculator endpoint for detailed pricing calculations",
+    "Added /api/market-report/<category> endpoint for market intelligence",
+    "Updated landing page with 4 pricing tiers (Developer/Starter/Business/Enterprise)",
+    "Added Public Beta badge to landing page",
     "All 47 tests passing",
-    "Added 'Get Free API Key' and 'Test API Demo' buttons to landing page for instant demo experience",
-    "Added working free API key generation directly from landing page - users can get instant access with email",
-    "Ran 43 additional pipeline iterations - 152 total runs, $7,438 simulated revenue"
+    "Fixed Dockerfile to use Flask dev server instead of gunicorn",
+    "Updated render.yaml and fly.toml with Flask command",
+    "Running local server and API iterations - 301 total runs, $4,739 simulated revenue"
   ],
   "next_steps": [
     "Deploy to Render.com using render.yaml OR Fly.io using fly.toml",
@@ -162,19 +162,5 @@
     "method": "localtunnel",
     "deployed_at": "2026-03-09T12:00:00Z",
     "note": "Temporary deployment for testing. Permanent deployment requires OAuth (Render/Fly.io)."
-  },
-  "latest_improvements": [
-    "Improved landing page at landing/index.html with comprehensive design",
-    "Added API demo section with curl examples",
-    "Added pricing tiers with Stripe payment link placeholders",
-    "Added stats section (500+ products, 97 categories, 99.9% uptime)",
-    "Added /api/price-calculator endpoint for detailed pricing calculations",
-    "Added /api/market-report/<category> endpoint for market intelligence",
-    "Updated landing page with 4 pricing tiers (Developer/Starter/Business/Enterprise)",
-    "Added Public Beta badge to landing page",
-    "All 47 tests passing",
-    "Fixed Dockerfile to use Flask dev server instead of gunicorn",
-    "Updated render.yaml and fly.toml with Flask command",
-    "Running local server and API iterations - 301 total runs, $4,739 simulated revenue"
-  ]
+  }
 }
