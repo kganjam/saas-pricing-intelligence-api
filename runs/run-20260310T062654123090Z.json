@@ -1,0 +1,191 @@
+{
+  "idea_id": "idea-saas-pricing-intelligence",
+  "timestamp": "2026-03-10T06:26:54.121615+00:00",
+  "analyses_generated": 20,
+  "revenue": 153.1267,
+  "cost": 0.1,
+  "projected_monthly_revenue": 4593.8,
+  "results": [
+    {
+      "product_name": "Enterprise CRM",
+      "recommended_price": 321.48,
+      "confidence": 0.7785,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 11.655
+    },
+    {
+      "product_name": "API Management Platform",
+      "recommended_price": 335.38,
+      "confidence": 0.7146,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 11.655
+    },
+    {
+      "product_name": "Identity Management",
+      "recommended_price": 342.4,
+      "confidence": 0.675,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 11.655
+    },
+    {
+      "product_name": "Customer Data Platform",
+      "recommended_price": 378.23,
+      "confidence": 0.7088,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 11.655
+    },
+    {
+      "product_name": "HR Management System",
+      "recommended_price": 286.18,
+      "confidence": 0.7051,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 11.655
+    },
+    {
+      "product_name": "Cybersecurity Platform",
+      "recommended_price": 374.58,
+      "confidence": 0.7569,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 11.655
+    },
+    {
+      "product_name": "Data Warehouse Solution",
+      "recommended_price": 445.09,
+      "confidence": 0.6808,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 11.655
+    },
+    {
+      "product_name": "Security Information Manager",
+      "recommended_price": 334.81,
+      "confidence": 0.7123,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 11.655
+    },
+    {
+      "product_name": "Business Intelligence Tool",
+      "recommended_price": 337.87,
+      "confidence": 0.7623,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 11.655
+    },
+    {
+      "product_name": "Cloud Project Management",
+      "recommended_price": 311.54,
+      "confidence": 0.7542,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 11.655
+    },
+    {
+      "product_name": "Contract Management",
+      "recommended_price": 292.62,
+      "confidence": 0.7873,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 11.655
+    },
+    {
+      "product_name": "Cloud Migration Tool",
+      "recommended_price": 364.64,
+      "confidence": 0.7686,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 11.655
+    },
+    {
+      "product_name": "Marketing Platform",
+      "recommended_price": 187.59,
+      "confidence": 0.7025,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 1.6583
+    },
+    {
+      "product_name": "Video Conferencing Pro",
+      "recommended_price": 212.41,
+      "confidence": 0.7541,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 1.6583
+    },
+    {
+      "product_name": "Email Marketing Suite",
+      "recommended_price": 183.61,
+      "confidence": 0.7319,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 1.6583
+    },
+    {
+      "product_name": "Learning Management System",
+      "recommended_price": 207.81,
+      "confidence": 0.7924,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 1.6583
+    },
+    {
+      "product_name": "E-commerce Platform",
+      "recommended_price": 243.49,
+      "confidence": 0.7069,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 1.6583
+    },
+    {
+      "product_name": "DevOps Automation Tool",
+      "recommended_price": 240.15,
+      "confidence": 0.6767,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 1.6583
+    },
+    {
+      "product_name": "IT Service Management",
+      "recommended_price": 207.52,
+      "confidence": 0.7947,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 1.6583
+    },
+    {
+      "product_name": "Product Analytics Platform",
+      "recommended_price": 183.43,
+      "confidence": 0.7089,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 1.6583
+    }
+  ],
+  "dry_run": false
+}

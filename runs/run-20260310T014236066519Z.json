@@ -1,0 +1,189 @@
+{
+  "idea_id": "idea-saas-pricing-intelligence",
+  "timestamp": "2026-03-10T01:42:36.065976+00:00",
+  "analyses_generated": 20,
+  "projected_monthly_revenue": 2510.45,
+  "results": [
+    {
+      "product_name": "Enterprise CRM",
+      "recommended_price": 304.13,
+      "confidence": 0.6874,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 11.655
+    },
+    {
+      "product_name": "API Management Platform",
+      "recommended_price": 364.05,
+      "confidence": 0.6984,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 11.655
+    },
+    {
+      "product_name": "Identity Management",
+      "recommended_price": 298.21,
+      "confidence": 0.7983,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 11.655
+    },
+    {
+      "product_name": "Customer Data Platform",
+      "recommended_price": 359.45,
+      "confidence": 0.7621,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 11.655
+    },
+    {
+      "product_name": "HR Management System",
+      "recommended_price": 329.94,
+      "confidence": 0.6762,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 11.655
+    },
+    {
+      "product_name": "Cloud Project Management",
+      "recommended_price": 285.36,
+      "confidence": 0.789,
+      "tier": "enterprise",
+      "segment": "enterprise",
+      "conversion_probability": 0.35,
+      "expected_revenue": 11.655
+    },
+    {
+      "product_name": "Marketing Platform",
+      "recommended_price": 179.75,
+      "confidence": 0.7542,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 1.6583
+    },
+    {
+      "product_name": "Video Conferencing Pro",
+      "recommended_price": 204.05,
+      "confidence": 0.7622,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 1.6583
+    },
+    {
+      "product_name": "Email Marketing Suite",
+      "recommended_price": 165.03,
+      "confidence": 0.7485,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 1.6583
+    },
+    {
+      "product_name": "Learning Management System",
+      "recommended_price": 220.23,
+      "confidence": 0.7523,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 1.6583
+    },
+    {
+      "product_name": "E-commerce Platform",
+      "recommended_price": 241.21,
+      "confidence": 0.709,
+      "tier": "growth",
+      "segment": "mid-market",
+      "conversion_probability": 0.25,
+      "expected_revenue": 1.6583
+    },
+    {
+      "product_name": "Team Collaboration Tool",
+      "recommended_price": 174.55,
+      "confidence": 0.787,
+      "tier": "growth",
+      "segment": "smb",
+      "conversion_probability": 0.15,
+      "expected_revenue": 0.995
+    },
+    {
+      "product_name": "Accounting Software",
+      "recommended_price": 170.43,
+      "confidence": 0.7078,
+      "tier": "growth",
+      "segment": "smb",
+      "conversion_probability": 0.15,
+      "expected_revenue": 0.995
+    },
+    {
+      "product_name": "Inventory Management",
+      "recommended_price": 192.99,
+      "confidence": 0.7644,
+      "tier": "growth",
+      "segment": "smb",
+      "conversion_probability": 0.15,
+      "expected_revenue": 0.995
+    },
+    {
+      "product_name": "Point of Sale System",
+      "recommended_price": 165.16,
+      "confidence": 0.7194,
+      "tier": "growth",
+      "segment": "smb",
+      "conversion_probability": 0.15,
+      "expected_revenue": 0.995
+    },
+    {
+      "product_name": "Help Desk Software",
+      "recommended_price": 131.48,
+      "confidence": 0.7462,
+      "tier": "starter",
+      "segment": "smb",
+      "conversion_probability": 0.15,
+      "expected_revenue": 0.245
+    },
+    {
+      "product_name": "Social Media Scheduler",
+      "recommended_price": 136.81,
+      "confidence": 0.7972,
+      "tier": "starter",
+      "segment": "smb",
+      "conversion_probability": 0.15,
+      "expected_revenue": 0.245
+    },
+    {
+      "product_name": "No-Code Database",
+      "recommended_price": 117.24,
+      "confidence": 0.7327,
+      "tier": "growth",
+      "segment": "startup",
+      "conversion_probability": 0.1,
+      "expected_revenue": 0.6633
+    },
+    {
+      "product_name": "Startup Analytics",
+      "recommended_price": 84.23,
+      "confidence": 0.7494,
+      "tier": "starter",
+      "segment": "startup",
+      "conversion_probability": 0.1,
+      "expected_revenue": 0.1633
+    },
+    {
+      "product_name": "Landing Page Builder",
+      "recommended_price": 107.07,
+      "confidence": 0.7877,
+      "tier": "starter",
+      "segment": "startup",
+      "conversion_probability": 0.1,
+      "expected_revenue": 0.1633
+    }
+  ],
+  "dry_run": false
+}

@@ -1,0 +1,39 @@
+{
+  "idea_id": "idea-saas-pricing-intelligence",
+  "timestamp": "2026-03-10T05:09:59.419963+00:00",
+  "analyses_generated": 20,
+  "projected_monthly_revenue": 2636.74596111041,
+  "results": [
+    {
+      "product_name": "Marketing Platform",
+      "recommended_price": 285.25,
+      "confidence": 0.79,
+      "tier": "growth"
+    },
+    {
+      "product_name": "Collaboration Tool",
+      "recommended_price": 174.0,
+      "confidence": 0.74,
+      "tier": "enterprise"
+    },
+    {
+      "product_name": "HR System",
+      "recommended_price": 258.36,
+      "confidence": 0.73,
+      "tier": "starter"
+    },
+    {
+      "product_name": "Collaboration Tool",
+      "recommended_price": 211.04,
+      "confidence": 0.73,
+      "tier": "starter"
+    },
+    {
+      "product_name": "Help Desk",
+      "recommended_price": 109.93,
+      "confidence": 0.74,
+      "tier": "starter"
+    }
+  ],
+  "dry_run": false
+}

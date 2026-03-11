@@ -1,0 +1,68 @@
+{
+  "idea_id": "idea-saas-pricing-intelligence",
+  "timestamp": "2026-03-09T20260310T002501048Z",
+  "analyses_generated": 1,
+  "projected_monthly_revenue": 3.75,
+  "results": [
+    {
+      "category": "",
+      "competitors": [
+        {
+          "avg_price": 36.0,
+          "category": "Communication",
+          "id": "slack",
+          "max_price": 75,
+          "min_price": 8,
+          "name": "Slack"
+        },
+        {
+          "avg_price": 87.67,
+          "category": "No-Code Wiki",
+          "id": "notion",
+          "max_price": 199,
+          "min_price": 15,
+          "name": "Notion"
+        },
+        {
+          "avg_price": 87.67,
+          "category": "No-Code Database",
+          "id": "airtable",
+          "max_price": 199,
+          "min_price": 15,
+          "name": "Airtable"
+        },
+        {
+          "avg_price": 36.0,
+          "category": "CRM",
+          "id": "hubspot",
+          "max_price": 75,
+          "min_price": 8,
+          "name": "HubSpot"
+        },
+        {
+          "avg_price": 36.0,
+          "category": "CRM",
+          "id": "salesforce",
+          "max_price": 75,
+          "min_price": 8,
+          "name": "Salesforce"
+        }
+      ],
+      "competitors_found": 563,
+      "current_price": 41.19,
+      "generated_at": "2026-03-10T00:25:01.048307+00:00",
+      "market_average": 77.29,
+      "market_percentile": 52.4,
+      "market_range": {
+        "high": 206.67,
+        "low": 36.0
+      },
+      "positioning": "competitive",
+      "price_position": "at",
+      "product_name": "HRIS System",
+      "recommendation": "Competitive value pricing - good for market penetration",
+      "success": true
+    }
+  ],
+  "dry_run": false
+}

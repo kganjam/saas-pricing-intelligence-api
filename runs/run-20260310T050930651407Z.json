@@ -1,0 +1,27 @@
+{
+  "idea_id": "idea-saas-pricing-intelligence",
+  "timestamp": "2026-03-10T05:09:30.651365+00:00",
+  "analyses_generated": 70,
+  "projected_monthly_revenue": 2620.45,
+  "results": [
+    {
+      "product_name": "Enterprise CRM",
+      "recommended_price": 294.54,
+      "confidence": 0.72,
+      "tier": "enterprise"
+    },
+    {
+      "product_name": "Marketing Platform",
+      "recommended_price": 207.97,
+      "confidence": 0.7,
+      "tier": "growth"
+    },
+    {
+      "product_name": "API Management",
+      "recommended_price": 359.88,
+      "confidence": 0.74,
+      "tier": "enterprise"
+    }
+  ],
+  "dry_run": false
+}

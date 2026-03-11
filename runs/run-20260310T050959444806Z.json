@@ -1,0 +1,39 @@
+{
+  "idea_id": "idea-saas-pricing-intelligence",
+  "timestamp": "2026-03-10T05:09:59.444765+00:00",
+  "analyses_generated": 20,
+  "projected_monthly_revenue": 2642.8601759566836,
+  "results": [
+    {
+      "product_name": "HR System",
+      "recommended_price": 394.23,
+      "confidence": 0.79,
+      "tier": "enterprise"
+    },
+    {
+      "product_name": "HR System",
+      "recommended_price": 138.4,
+      "confidence": 0.8,
+      "tier": "growth"
+    },
+    {
+      "product_name": "Sales CRM",
+      "recommended_price": 290.86,
+      "confidence": 0.77,
+      "tier": "starter"
+    },
+    {
+      "product_name": "E-commerce Platform",
+      "recommended_price": 122.8,
+      "confidence": 0.75,
+      "tier": "starter"
+    },
+    {
+      "product_name": "API Management",
+      "recommended_price": 115.12,
+      "confidence": 0.73,
+      "tier": "starter"
+    }
+  ],
+  "dry_run": false
+}

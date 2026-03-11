@@ -1,0 +1,79 @@
+name: Deploy SaaS Pricing API
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      fly_api_token:
+        description: 'Fly.io API Token'
+        required: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: |
+          python -m pytest tests/ -v
+
+  deploy-fly:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Fly.io
+        uses: superfly/flyctl-actions/setup-flyctl@master
+
+      - name: Deploy
+        run: |
+          if [ -n "${{ github.event.inputs.fly_api_token }}" ]; then
+            flyctl auth login --token "${{ github.event.inputs.fly_api_token }}"
+          fi
+          flyctl deploy --config fly.toml
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+
+  deploy-render:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to Render
+        uses: renderhq/action-deploy@v1
+        with:
+          render-service-token: ${{ secrets.RENDER_API_TOKEN }}
+          service-id: ${{ secrets.RENDER_SERVICE_ID }}
+
+  deploy-railway:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy to Railway
+        if: env.RAILWAY_TOKEN != ''
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+        run: |
+          npm install -g @railway/cli
+          railway login --token $RAILWAY_TOKEN
+          railway deploy --service saas-pricing-api

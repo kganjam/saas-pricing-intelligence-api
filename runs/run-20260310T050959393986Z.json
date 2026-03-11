@@ -1,0 +1,39 @@
+{
+  "idea_id": "idea-saas-pricing-intelligence",
+  "timestamp": "2026-03-10T05:09:59.393944+00:00",
+  "analyses_generated": 20,
+  "projected_monthly_revenue": 2604.2652066169403,
+  "results": [
+    {
+      "product_name": "Collaboration Tool",
+      "recommended_price": 232.11,
+      "confidence": 0.69,
+      "tier": "starter"
+    },
+    {
+      "product_name": "Collaboration Tool",
+      "recommended_price": 128.85,
+      "confidence": 0.66,
+      "tier": "growth"
+    },
+    {
+      "product_name": "Enterprise CRM",
+      "recommended_price": 218.97,
+      "confidence": 0.78,
+      "tier": "starter"
+    },
+    {
+      "product_name": "Analytics Tool",
+      "recommended_price": 274.13,
+      "confidence": 0.75,
+      "tier": "starter"
+    },
+    {
+      "product_name": "Project Management",
+      "recommended_price": 139.54,
+      "confidence": 0.68,
+      "tier": "starter"
+    }
+  ],
+  "dry_run": false
+}

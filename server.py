@@ -251,7 +251,7 @@ def status():
         'service': 'SaaS Pricing Intelligence API',
         'version': '1.0.0',
         'status': 'operational',
-        'products_indexed': len(products_db),
+        'products_tracked': len(products_db),
         'endpoints': [
             '/api/products',
             '/api/pricing/<id>',
